@@ -8,4 +8,5 @@ Studying RabbitMQ and Docker together!
 - [amqplib](https://github.com/squaremo/amqp.node)
 - [Docker](https://docker.com)
 - [docker-compose](https://docs.docker.com/compose/)
+- [Nodemon](https://nodemon.io/)
 - [eslint-config-standard](https://github.com/standard/eslint-config-standard)
