@@ -1,0 +1,24 @@
+version: '2.1'
+services:
+  api:
+    container_name: rabbitmq-sample-api
+    image: rabbitmq-sample-api
+    restart: always
+    tty: true
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+  rabbitmq:
+    container_name: rabbitmq-sample-rabbitmq
+    image: rabbitmq:3.7.4-management-alpine
+    restart: always
+    tty: true
+    hostname: rabbitmq
+    healthcheck:
+      test: "exit 0"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
