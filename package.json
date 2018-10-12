@@ -1,7 +1,7 @@
 {
-  "name": "rabbitmq-sample",
+  "name": "node-rabbitmq-docker-lab",
   "version": "0.0.1",
-  "description": "Studying RabbitMQ",
+  "description": "Studying RabbitMQ and Docker with Nodejs",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon .",
